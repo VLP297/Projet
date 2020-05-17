@@ -6,7 +6,7 @@ class AuthTest extends TestCase
 {
     public function testFailure()
     {
-        $this->assertDirectoryIsReadable('vendor');
+        $this->assertDirectoryIsReadable('..\vendor');
     }
 }
 ?>
