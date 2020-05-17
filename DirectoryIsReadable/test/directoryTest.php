@@ -6,7 +6,7 @@ class directoryTest extends TestCase
 {
     public function testFailure()
     {
-        $this->assertDirectoryIsReadable('..\aloeprevention');
+        $this->assertDirectoryIsReadable('\aloeprevention');
     }
 }
 ?>
