@@ -1,0 +1,289 @@
+/* Barre de navigation */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+#nav {
+  font-family: 'Montserrat', sans-serif;
+  font-size:18px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+  color:rgb(80, 79, 79)!important;
+}
+
+.nav-link:hover {
+  color:rgb(218, 166, 0) !important;
+  /* box-shadow: inset 0px 3px 0px rgb(218, 166, 0); */
+}
+
+/* Header */ 
+header {
+  position: relative;
+  height: 90vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background-color: rgba(229, 247, 250, 0.301); */
+  /* opacity: 1; */
+  /* z-index: 0; */
+}
+
+header h1 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  font-size: 75px;
+  color:white !important;
+}
+
+header p {
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  font-size: 40px;
+  color:white !important;
+}
+
+.gold {
+  color:rgb(218, 166, 0) !important;
+}
+
+header .btn {
+  font-size: 18px;
+  color: white !important;
+  font-weight:bold;
+}
+
+/* élément flottant recherche produit */
+#trouverprod {
+    position: fixed;
+    width: 215px;
+    height: 67px;
+    top: 145px;
+    right: 0px;
+    background: url("../images/Accueil/trouver.png") top right no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+	z-index: 101;
+}
+
+/* carousel */
+.carousel-control-next {
+  filter: invert(100%);
+}
+
+.carousel-control-prev {
+  filter: invert(100%);
+}
+
+/* hover image produits */
+.overlay-image {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay-image .text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: white !important;
+  font-size: 19px;
+  line-height: 1.5em;
+  text-shadow: 2px 2px 2px #000;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.overlay-image .hover {
+  background-color: rgba(88, 87, 95, 0.075);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+  transition: .5s ease;
+  margin:0;
+  position:absolute;
+}
+ 
+/* New overlay appearance on hover */
+.overlay-image:hover .hover {
+  opacity: 0;
+}
+
+
+/* cacher le champs texte problématique jusqu'à ce que la case conseil personnalisé soit checked */
+#validationTextarea0 {
+  display:none;
+}
+
+#inlineCheckbox1:checked ~ #validationTextarea0 {
+  display: block;
+}
+
+#produits {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: black!important;
+  font-size: 18px;
+}
+
+#txtproduits {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: black!important;
+  font-size: 17.5px;
+}
+
+#gold2 {
+  color:rgb(218, 166, 0) !important;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#titre {
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  font-size: 45px;
+  color:rgb(218, 166, 0) !important;
+  text-align: center;
+
+}
+
+footer {
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+  color:rgb(80, 79, 79) !important;
+  font-size: 18px;
+}
+
+#footer {
+  text-align: right;
+}
+
+#contact {
+  font-family: 'Montserrat', Sans-serif;
+  font-size: 18px;
+}
+
+#btncata {
+  font-family: 'Montserrat', Sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.link {
+  color:rgb(80, 79, 79) !important;
+  text-decoration: none; 
+  background-color: none;
+}
+
+#gol {
+  font-family: 'Montserrat', Sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: black !important;
+  text-align: center;
+  background-color: rgb(255,207,33) !important;
+  padding: 4px;
+}
+
+.link:hover {
+  color:rgb(218, 166, 0) !important;
+  text-decoration: none; 
+  /* box-shadow: inset 0px 3px 0px rgb(218, 166, 0); */
+}
+
+/*Modifier font formulaire Contact*/
+::-webkit-input-placeholder {
+  font-family: 'Montserrat', Sans-serif;
+}
+
+:-ms-input-placeholder {
+  font-family: 'Montserrat', Sans-serif;
+
+}
+
+input {
+  font-family: 'Montserrat', Sans-serif;
+}
+
+#detox {
+  font-family: 'Montserrat', Sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: black !important;
+  text-align: center;
+  position: relative;
+}
+
+#goldprod {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  color:rgb(218, 166, 0) !important;
+}
+
+#txtproduitsdescription {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: black!important;
+  font-size: 17px;
+  text-align: left;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.dropdown:hover>.dropdown-menu {
+ display: block;
+}
+
+.navb{
+     animation: bounce 0.35s ease infinite alternate;
+}
+
+@keyframes bounce{
+     from {transform: translateY(0);}
+     to   {transform: translateY(-1.5px);}
+}
+
+.carousel-indicators .active{
+    background-color: black;
+}
